@@ -1,0 +1,126 @@
+@font-face {
+	font-family: 'Inter';
+	src: url('/fonts/Inter-Regular.ttf') format('truetype');
+}
+
+@keyframes button-smoother {
+	from {
+		border-radius: 4px;
+	}
+	to {
+		border-radius: 8px;
+	}
+}
+
+:root {
+	--accent-color: #0185d0;
+	--primary-color: #fff;
+	--secondary-color: #000;
+
+	--primary-color-80: rgba(255, 255, 255, 0.8);
+}
+
+html,
+body {
+	font-family: 'Inter';
+	margin: 0;
+}
+
+header {
+	background-color: var(--accent-color);
+	color: var(--primary-color);
+}
+
+header > img {
+	margin: 32px;
+	margin-right: 4px;
+}
+header > div {
+	margin: 32px;
+	margin-left: 4px;
+}
+
+footer {
+	color: var(--secondary-color);
+}
+
+.text-center {
+	text-align: center;
+}
+
+.accent-color-bg {
+	background-color: var(--accent-color);
+}
+
+.accent-color {
+	color: var(--accent-color);
+}
+
+.primary-color {
+	color: var(--primary-color);
+}
+
+.primary-color-bg-80 {
+	background-color: var(--primary-color-80);
+}
+
+.secondary-color {
+	color: var(--secondary-color);
+}
+
+.img-link {
+	margin: 16px;
+}
+
+.link-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	margin: 32px;
+}
+
+.link-container > a {
+	color: var(--secondary-color);
+}
+
+.link-container > a:hover {
+	color: var(--accent-color);
+	cursor: pointer;
+}
+
+.image-container > img {
+	height: 512px;
+	width: 100%;
+	position: relative;
+}
+
+.image-container > .overlay {
+	position: absolute;
+	top: 50%;
+	left: 25%;
+	right: 25%;
+	text-align: center;
+
+	background-color: var(--primary-color-80);
+	border-radius: 16px;
+}
+
+.reminder {
+	border-radius: 16px;
+	padding: 16px;
+	padding-top: 4px;
+}
+
+.button {
+	color: var(--primary-color);
+	background-color: var(--accent-color);
+	padding: 4px;
+	padding-left: 8px;
+	padding-right: 8px;
+	border-radius: 4px;
+}
+
+.button:hover {
+	border-radius: 8px;
+	cursor: pointer;
+	user-select: none;
+}
